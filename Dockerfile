@@ -1,4 +1,4 @@
-FROM corbinu/decimal-node:alpine
+FROM mhart/alpine-node:latest
 MAINTAINER 	Corbin Uselton <corbinu@decimal.io>
 
 ENV NODE_ENV production
