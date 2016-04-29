@@ -11,6 +11,7 @@ Alpine container for installing/building node applications
     - babel-cli
     - typescript
     - node-gyp
+    - prebuild
 
 I use it in my CI to install packages in via a shared volume
 [mhart/alpine-node](https://hub.docker.com/r/mhart/alpine-node/)

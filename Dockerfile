@@ -8,6 +8,6 @@ RUN apk add --no-cache make gcc g++ python git
 RUN mkdir -p /install
 WORKDIR /install
 
-RUN npm install -g typescript babel-cli node-gyp
+RUN npm install -g typescript babel-cli node-gyp @corbinu/prebuild
 
 CMD [ "npm install" ]
