@@ -1,6 +1,6 @@
 alpine-node-builder
 ---------------------------------------------------------
-Alpine container for installing/building node applications
+Alpine container for building native node applications
 
 - includes
     - make
@@ -17,3 +17,8 @@ I use it in my CI to install packages in via a shared volume
 [mhart/alpine-node](https://hub.docker.com/r/mhart/alpine-node/)
 
 Preventing the need for these applications to be installed in the final container.
+
+To use on the current directory run like this
+```
+docker run -it --volume "$(pwd):/install" corbinu/alpine-node-builder /bin/sh
+```
