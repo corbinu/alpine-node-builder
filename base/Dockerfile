@@ -10,6 +10,4 @@ RUN mkdir -p /install
 RUN echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
 WORKDIR /install
 
-RUN npm install -g typescript babel-cli
-
 CMD [ "npm install" ]

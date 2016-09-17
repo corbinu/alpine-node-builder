@@ -2,16 +2,19 @@ alpine-node-builder
 ---------------------------------------------------------
 Alpine container for building native node applications
 
+Main
 - includes
     - make
     - gcc
     - g++
     - python
     - git
-    - babel-cli
-    - typescript
     - node-gyp
     - prebuild
+
+base
+- includes
+    - git
 
 I use it in my CI to install packages in via a shared volume
 
